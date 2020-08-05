@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(34, 65, 109);
+  font-family: "Anton", sans-serif;
+}
+
+header {
+  background-color: rgb(207, 203, 203);
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+header > h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+}
+.score-board {
+  margin: 30px auto;
+  border: 3px solid rgb(196, 189, 189);
+  width: 250px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 60px;
+  color: rgb(196, 189, 189);
+  position: relative;
+}
+.badge {
+  background-color: rgb(53, 158, 114);
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 90px;
+  color: rgb(209, 208, 206);
+}
+#user-label {
+  position: absolute;
+  left: -80px;
+  transition: 200ms;
+}
+#comp-label {
+  position: absolute;
+  right: -80px;
+  transition: 200ms;
+}
+
+.result {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(196, 189, 189);
+  margin: 60px;
+  height: 90px;
+}
+.panel-wyboru {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.przycisk {
+  border: 4px solid whitesmoke;
+  margin: 0 20px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgba(67, 179, 132, 0.575);
+  transition-duration: 130ms;
+}
+.przycisk:hover {
+  cursor: pointer;
+  background-color: rgba(67, 179, 132, 0.822);
+}
+#action-message {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(196, 189, 189);
+  margin: 50px;
+}
+
+.big-badge {
+  background-color: rgb(53, 158, 114);
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 100px;
+  color: rgb(219, 190, 96);
+  box-shadow: 0 0 7px white;
+  transition: 200ms;
+}
+.przycisk-red {
+  border: 4px solid red;
+  transition: ease-out;
+  box-shadow: 0 0 15px red;
+}
+.przycisk-green {
+  border: 4px solid rgb(30, 231, 12);
+  transition: ease-out;
+  box-shadow: 0 0 15px rgb(30, 231, 12);
+}
+.przycisk-grey {
+  border: 4px solid rgb(175, 182, 175);
+  transition: ease-out;
+  box-shadow: 0 0 15px rgb(175, 182, 175);
+}
